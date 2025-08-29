@@ -3,7 +3,7 @@ export function checkPassword(password: any): boolean {
     return false;
   }
 
-  if (password.length < 8) {
+  if (password.length < 7) {
     return false;
   }
   if (password.length > 20) {
