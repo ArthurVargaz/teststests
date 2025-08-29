@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./JavaScript/starter/src
+        working-directory: ./JavaScript/starter
     steps:
       - uses: actions/checkout@v4
       - name: Set up Node.js
@@ -23,5 +23,7 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         run: npm install
+      - name: Build TypeScript
+        run: npm run build
       - name: Run tests
         run: npm test
