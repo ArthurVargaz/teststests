@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: print javascript version
-        run: javascript --version
+      - name: print java version
+        run: java --version
       - name: print mvn version
         run: mvn --version
       - name: print node version
