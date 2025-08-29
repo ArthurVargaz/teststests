@@ -7,7 +7,7 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "tsc && node dist/index.js",
-    "test": "tsc && node --test dist/**/*.test.js"
+    "test": "tsc && find dist -name '*.test.js' -exec node --test {} +"
   },
   "keywords": [],
   "author": "",
