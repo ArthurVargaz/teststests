@@ -1,4 +1,4 @@
-name: JavaScript CICD
+name: JavaScript CI/CD
 
 on:
   push:
