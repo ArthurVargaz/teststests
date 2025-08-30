@@ -1,0 +1,13 @@
+@url = https://lhbpxvgw4i.execute-api.us-east-1.amazonaws.com/dev
+
+GET {{url}}/messages
+
+###
+
+POST {{url}}/messages
+Content-Type: application/json
+
+{
+  "message": "Hello World!",
+  "author": "Test User"
+}
