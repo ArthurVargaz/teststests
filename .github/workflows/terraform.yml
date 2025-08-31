@@ -4,7 +4,7 @@ on:
   push:
     branches: ["cloud-dev"]
   pull_request:
-    branches: ["bloud-dev"]
+    branches: ["cloud-dev"]
 
 permissions:
   contents: read
@@ -17,7 +17,6 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./.terraform
 
     steps:
       - name: Checkout
@@ -35,7 +34,7 @@ jobs:
         run: terraform init
       - name: Terraform format
         run: terraform fmt -check
-        # don't exit wiht error:
+        # don't exit with error:
         continue-on-error: true
       - name: Terraform Validate
         run: terraform validate
